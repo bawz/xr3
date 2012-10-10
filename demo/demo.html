@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="//use.typekit.com/csy3csw.js" onload="try{Typekit.load();}catch(e){}"></script>
+<script type="text/javascript" src="//des9lw2d2rkna.cloudfront.net/plgins.min.js"></script>
+<script type="text/javascript" src="//des9lw2d2rkna.cloudfront.net/modernizr.min.js"></script>
+<script type="text/javascript" src="//des9lw2d2rkna.cloudfront.net/markup.min.js"></script>
+<script type="text/javascript" src="//des9lw2d2rkna.cloudfront.net/jzon.jquery.min.js"></script>
+<script type="text/javascript" src="//des9lw2d2rkna.cloudfront.net/tap.jquery.min.js"></script>
+<script type="text/javascript" src="../src/xr3.js"></script>
+</head>
+<body>
+<div class="wrapz">
+	<ul>
+		<li data-page=".bob" class="auto-load">Bob</li>
+		<li data-page=".frank">Frank</li>
+		<li data-page=".joe">Joe</li>
+		<li data-page=".jason">Jason</li>
+	</ul>
+	<section>
+		<div data-pg="true" class="page bob">I'm Bob</div>
+		<div data-pg class="page joe">I'm Joe</div>
+		<div data-pg class="page frank">I'm Frank</div>
+		<div data-pg class="page jason">I'm Jason</div>
+	</section>
+</div>
+<script type="text/javascript">
+	$(function () {
+		xr3.run();
+	});
+</script>
+<style type="text/css">
+	.page {
+		display: none;
+	}
+	.page.load {
+		display: block;
+	}
+	li {
+		cursor: pointer;
+	}
+	li.auto-load {
+		color: #08c;
+	}
+</style>
+</body>
+</html>
