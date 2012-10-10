@@ -1,0 +1,15 @@
+{
+	"author" : "Jason Silberman",
+	"name" : "xr3",
+	"description" : "A simple and small script to load pages and views",
+	"version" : "1.0.0",
+	"url" : "http://github.com/Jzn99/xr3/",
+	"repository" : {
+		"type" : "git",
+		"url" : "git://github.com/Jzn99/xr3.git"
+	},
+	"files" : {
+		"compressed" : "./src/xr3.min.js",
+		"uncompressed" : "./src/xr3.js"
+	}
+}
