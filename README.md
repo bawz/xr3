@@ -7,7 +7,7 @@ Xr3 is a simple way to load `node` elements as pages. It is *very* simple to imp
 	<script src="js/vendor/xr3.js"></script>
 
 What we are doing here is just including the `xr3.js` script into our project. We need this script for XR3 to work. Next we need to wait for the page load and then call `xr3.run()`. *Make sure you also have [jQuery](http://jquery.com) loaded.
-
+	``` javascript
 	<script>
 		jQuery(document).ready(function () {
 			xr3.run();
