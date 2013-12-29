@@ -39,7 +39,7 @@ Here is a simple example html template for using XR3.
 	<h2>Contact Me</h2>
 	<p>Here is some contact stuff.</p>
 </div>
-```html
+```
 Now, I know there is a lot of code here but let me explain to you what it does. The first thing we are doing which is within a `ul` element. Basically we are making an unordered list and filling it with three `li` elements. There are two *key* things here: one, see how each thing has a `data-page` attribute? That tells the code which "page" to open when the element is clicked. And two, see how that `li` for the home page? See how it has a class `auto-load`? That is important to make sure to load that page first.
 
 Next we are going to look at those `div` elements. Now each `div` has a class of `.page` and an attribute of `data-pt`. This signals to the code that this should be rendered as a page with XR3. Also each have another class that coordinates with a `li` in the `ul` element. Basiciclly what is happening is when a `li` here is clicked it fins the `data-page` attribute and uses that to target a `.page` element and add a `.load` class.
